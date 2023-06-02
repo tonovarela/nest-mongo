@@ -47,8 +47,6 @@ export class AuthService {
 
  
 
-
-
   async register(registerDTO: RegisterUserDto): Promise<LoginResponse> {
     const user = await this.create(registerDTO);
     return {
