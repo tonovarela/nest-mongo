@@ -12,7 +12,6 @@ import { LoginResponse } from './interfaces/login-response';
 
 import { User } from './entities/user.entity';
 
-
 import { CreateUserDto, LoginDto, RegisterUserDto, UpdateUserDto } from './dto';
 
 @Injectable()
