@@ -10,7 +10,6 @@ import { LoginResponse } from './interfaces/login-response';
 @Controller('auth')
 export class AuthController {
   constructor(private readonly authService: AuthService){
-    
   }
     
 
@@ -35,7 +34,6 @@ export class AuthController {
   @UseGuards(AuthGuard)
   checkToken(@Request() req:Request):LoginResponse  {
     const user = req["user"] as User;
-
     return  {
       user,
       token:this.authService.getJWT({id:user._id})
